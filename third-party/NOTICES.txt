@@ -1,0 +1,25 @@
+VideoFlow third-party components
+
+FFmpeg and FFprobe: Gyan Doshi 9.0.2-essentials_build-www.gyan.dev.
+Distributed as unmodified, separate command-line executables; not linked into VideoFlow.
+This build enables GPL and version3, including libx264/libx265 and other libraries.
+License: GPL version 3 or later. See FFmpeg-GPL-3.0.txt.
+Binary provenance and checksums: engine-manifest.json.
+Provider's original configuration/library inventory: FFmpeg-vendor-README.txt.
+Runtime configure arguments: FFmpeg-buildconf.txt.
+Upstream: https://ffmpeg.org/
+Provider: https://www.gyan.dev/ffmpeg/builds/
+FFmpeg source revision identified by provider:
+https://github.com/FFmpeg/FFmpeg/commit/946fcce07b
+
+RELEASE STATUS: LOCAL ACCEPTANCE BUILD; PUBLIC DISTRIBUTION NOT CLEARED.
+The upstream source link is NOT a complete corresponding-source delivery.
+Before public redistribution, the distributor must obtain and provide the complete
+corresponding source for the exact shipped FFmpeg binaries, including linked
+libraries and required build scripts, through a license-compliant delivery method.
+No source offer is made by this document. See docs/release_readiness.md in source.
+
+Electron: MIT; see Electron-LICENSE.txt. Chromium and its third-party notices are
+also shipped in the application's LICENSES.chromium.html.
+Vue and production npm dependencies: see the individual notices in npm/.
+These notices do not assign a license to the VideoFlow project itself.

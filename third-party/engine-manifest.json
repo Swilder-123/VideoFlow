@@ -1,0 +1,17 @@
+{
+  "provider": "Gyan Doshi",
+  "url": "https://www.gyan.dev/ffmpeg/builds/",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "ffmpeg": {
+      "filename": "ffmpeg.exe",
+      "version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "sha256": "3256173f3f8bffd7df12227c68adf68025edb1832273a9530688a7bb1ed8edec"
+    },
+    "ffprobe": {
+      "filename": "ffprobe.exe",
+      "version": "ffprobe version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers",
+      "sha256": "f0d36ecbbdd3bcfac3efa078c96c7271c2e68b3810595552ac3b7f17e9a65c52"
+    }
+  }
+}

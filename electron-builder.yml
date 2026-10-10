@@ -1,0 +1,38 @@
+appId: cn.videoflow.desktop
+productName: VideoFlow
+directories:
+  output: release/0.3.0
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+  - build/icon.png
+extraResources:
+  - from: tools/ffmpeg/bin
+    to: ffmpeg
+    filter:
+      - ffmpeg.exe
+      - ffprobe.exe
+  - from: third-party
+    to: licenses
+asar: true
+electronDist: node_modules/electron/dist
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: VideoFlow-Setup-${version}-x64.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: false
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  shortcutName: VideoFlow
+  installerLanguages:
+    - zh_CN

@@ -1,0 +1,34 @@
+{
+  "name": "videoflow",
+  "version": "0.3.0",
+  "private": true,
+  "description": "VideoFlow 本地视频格式转换器",
+  "author": "VideoFlow",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "electron .",
+    "test": "playwright test",
+    "test:installed": "playwright test --config=playwright.installed.config.js",
+    "pack": "npm run build && node scripts/build-windows.mjs --dir",
+    "dist:win": "npm run build && node scripts/build-windows.mjs",
+    "prepare:release": "node scripts/prepare-release.mjs"
+  },
+  "dependencies": {
+    "vue": "3.5.43"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-vue": "6.0.10",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.4"
+  }
+}
