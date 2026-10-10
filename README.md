@@ -132,6 +132,6 @@ electron-builder.yml            x64 / 中文 NSIS 配置
 
 需求以根目录 `requirements.md` 为唯一依据，原始 UI 参考图保持原样。主进程执行所有系统命令/文件操作，参数数组且禁用 shell；启用 contextIsolation/sandbox、关闭 nodeIntegration、校验 IPC 主窗口/主框架来源。没有通用命令执行或任意路径打开接口，没有独立 HTTP 服务。
 
-`.gitignore` 排除依赖、构建、缓存、测试输出、用户视频目录和私密配置；保留可复现源码、锁文件、必要通知和经检查的安装截图。未创建 GitHub 仓库，未推送。开发过程见 [AI 开发日志](docs/ai_development_log.md)。
+`.gitignore` 排除依赖、构建、缓存、测试输出、用户视频目录和私密配置；保留可复现源码、锁文件、必要通知和经检查的安装截图。
 
 会话结束总结见 [AI 开发总结](docs/ai_development_summary.md)，最终通过项、阻塞项及提交清单见 [交付审查](docs/final_delivery_check.md)。项目自有代码尚未选择开源许可证，不将第三方 GPL 文本误作整个 VideoFlow 的许可声明。源码仓库提交与安装包公开分发的结论分别列出。
